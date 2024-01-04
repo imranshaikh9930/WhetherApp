@@ -12,7 +12,7 @@ async function addCity() {
   // Clear the previous debounce timer
   clearTimeout(debounceTimer);
 
-  // Set a new debounce timer
+  // Set a new debounce timer 
   debounceTimer = setTimeout(async () => {
     let getData = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${inputValue.value}&appid=${API_key}&units=metric`
@@ -30,7 +30,7 @@ async function addCity() {
     };
  
     cities.push(newCity);
-    
+
     const weatherImages = {
       Clouds: "Assets/Moon cloud fast wind.png",
       Smoke: "Assets/Moon cloud fast wind.png",
@@ -96,6 +96,8 @@ async function addCity() {
 
       // Append the card to the weatherCardsContainer
       weatherCardsContainer.appendChild(card);
+
+      inputValue.value ="";
     });
   }, 500);
 }
