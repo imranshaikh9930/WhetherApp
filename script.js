@@ -69,7 +69,7 @@ async function addCity() {
           cities.forEach((city) => {
             const weatherCondition = city.conditions;
             const weatherImageUrl =
-              weatherImages[weatherCondition] || "Assets/download.jpeg";
+              weatherImages[weatherCondition] || "Assets/Moon cloud fast wind.png";
   
             const image = document.createElement("img");
             image.src = weatherImageUrl;
