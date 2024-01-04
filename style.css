@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #1c1b33;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  margin-top: 2rem;
+}
+main h3 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+main .input_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 20px 0px;
+}
+.input-icon {
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px #000;
+  padding: 10px;
+  color: white;
+  gap: 10px;
+  border-radius: 5px;
+}
+.input-icon input {
+  background: #1c1c34;
+  border: none;
+  outline: none;
+  padding: 5px 8x;
+  color: white;
+  width: 35vw;
+  display: flex;
+  flex-shrink: 1;
+}
+.btn-container {
+  background-color: #4a397f;
+
+  border-radius: 10px;
+}
+.btn-container button {
+  padding: 16px 30px;
+  color: #ffffff;
+  font-weight: 700;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.btn-container button:hover {
+  filter: brightness(80%);
+}
+
+.display-cards-container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100vw;
+  gap: 1rem;
+  justify-content: center;
+  /* height: 270px; */
+  /* padding: 15px 10px; */
+  color: white;
+  /* border: 1px solid white; */
+  position: relative;
+}
+.card-subcontainer {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid white; */
+}
+.display-cards-container .temp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0px 10px; */
+  margin-bottom: -2rem;
+  padding: 0;
+  /* position: absolute; */
+}
+.display-cards-container .temp h2 {
+  font-size: 3rem;
+}
+.display-cards-container .temp img {
+  width: 130px;
+}
+.display-cards-container .units {
+  padding: 0px 15px;
+}
+.display-cards-container .location {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 15px;
+  margin-bottom: 1rem;
+}
+
+svg {
+  margin-bottom: -4rem;
+  display: flex;
+  gap: 5rem;
+}
+
+@media screen and (max-width: 425px) {
+  main h3 {
+    text-align: center;
+    font-size: 28px;
+  }
+  .input_container {
+    flex-direction: column;
+  }
+  .input-icon input {
+    width: 100%;
+  }
+
+  .display-cards-container {
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .display-cards-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* gap: 0; */
+  }
+}
